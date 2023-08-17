@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hair_Object-Oriented_LOGO_Library</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,400i|PT+Serif:700" rel="stylesheet">
+<link rel="stylesheet" href="dist/css/style.css">
+<script src="https://cdn.bootcss.com/scrollReveal.js/4.0.5/scrollreveal.min.js"></script>
+</head>
+<body class="is-boxed has-animations">
+<div class="body-wrap boxed-container">
+	<header class="site-header">
+		<div class="container">
+			<div class="site-header-inner">
+				<div class="brand header-brand">
+					<h1 class="m-0">
+						<a href="#">
+							<svg width="26" height="28" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.736 11.988C14.28 11.988 16.632 12.012 18.792 12.06C19.92 7.5 21.024 4.332 22.104 2.556C22.824 1.524 23.544 0.779998 24.264 0.323998C24.552 0.131999 24.84 0.0359995 25.128 0.0359995C25.44 0.0359995 25.596 0.503999 25.596 1.44C25.596 2.376 25.512 3.36 25.344 4.392C25.2 5.424 25.008 6.612 24.768 7.956C23.976 12.372 23.376 15.9 22.968 18.54C22.584 21.18 22.392 23.724 22.392 26.172C22.392 26.844 21.912 27.18 20.952 27.18C19.44 27.18 18.408 26.892 17.856 26.316C17.304 25.716 17.028 24.648 17.028 23.112C17.028 21.552 17.34 19.104 17.964 15.768C15.324 15.648 13.656 15.588 12.96 15.588H11.484C11.22 15.588 10.956 15.6 10.692 15.624C9.612 19.752 9.072 23.016 9.072 25.416C9.072 26.832 7.692 27.54 4.932 27.54C4.332 27.54 3.972 27.24 3.852 26.64C3.756 26.016 3.708 25.02 3.708 23.652C3.708 22.26 4.14 19.776 5.004 16.2C3.54 16.416 2.472 16.524 1.8 16.524C1.488 16.524 1.332 16.404 1.332 16.164C1.332 15.636 1.716 15.036 2.484 14.364C3.276 13.692 4.428 13.152 5.94 12.744C6.828 9.672 7.716 7.152 8.604 5.184C6.012 5.232 4.104 5.736 2.88 6.696C2.496 6.984 2.184 7.248 1.944 7.488C1.704 7.704 1.488 7.812 1.296 7.812C1.128 7.812 0.96 7.668 0.792 7.38C0.624 7.092 0.54 6.708 0.54 6.228C0.54 4.476 2.016 3.144 4.968 2.232C7.32 1.512 10.056 1.14 13.176 1.116H13.248C13.416 1.116 13.644 1.212 13.932 1.404C14.244 1.596 14.4 1.908 14.4 2.34C14.4 2.772 14.316 3.264 14.148 3.816C14.004 4.344 13.8 4.74 13.536 5.004C13.392 6.132 12.792 8.46 11.736 11.988Z" fill="url(#paint0_radial)"/>
+							<defs>
+							<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(13 14) rotate(90) scale(24 13)">
+							<stop stop-color="#12AD9E"/>
+							<stop offset="1" stop-color="white"/>
+							</radialGradient>
+							</defs>
+							</svg>
+						</a>
+					</h1>
+				</div>
+				<ul class="header-links list-reset m-0">
+					<li>
+						<a href="https://github.com/StephenKingJJY/Hair"><svg t="1571212630799" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2578" width="16" height="16"><path d="M512 0a512 512 0 0 0-512 512 512 512 0 0 0 350.08 485.76c25.6 4.8 35.008-11.008 35.008-24.64 0-12.16-0.448-44.352-0.64-87.04-142.464 30.912-172.48-68.672-172.48-68.672-23.296-59.136-56.96-74.88-56.96-74.88-46.4-31.744 3.584-31.104 3.584-31.104 51.392 3.584 78.4 52.736 78.4 52.736 45.696 78.272 119.872 55.68 149.12 42.56 4.608-33.088 17.792-55.68 32.448-68.48-113.728-12.8-233.216-56.832-233.216-252.992 0-55.872 19.84-101.568 52.672-137.408-5.76-12.928-23.04-64.96 4.48-135.488 0 0 42.88-13.76 140.8 52.48a490.88 490.88 0 0 1 128-17.28 490.88 490.88 0 0 1 128 17.28c97.28-66.24 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.56 5.12 135.488a198.4 198.4 0 0 1 52.48 137.408c0 196.672-119.68 240-233.6 252.608 17.92 15.36 34.56 46.72 34.56 94.72 0 68.48-0.64 123.52-0.64 140.16 0 13.44 8.96 29.44 35.2 24.32A510.208 510.208 0 0 0 1024 512a512 512 0 0 0-512-512" fill="#ffffff" p-id="2579"></path></svg></a>
+					</li>
+					<li>
+						<a class="button button-sm button-shadow" href="#">Docs</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero text-light text-center">
+			<div class="container-sm">
+				<div class="hero-inner">
+					<h1 class="hero-title h2-mobile mt-0 is-revealing">Bring Turtle Words to Modern Internet.</h1>
+					<p class="hero-paragraph is-revealing">Use fashionable programming technology and make your code powerful just like when you were a kid.</p>
+					<p class="hero-cta is-revealing"><a class="button button-secondary button-shadow" href="latest/hair.zip">Download Hair v<%$ :hair_version%></a></p>
+					<div class="hero-media">
+						<embed src="./frame.png" width="100%"/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="clients section">
+			<div class="container">
+				<div class="clients-inner section-inner has-top-divider">
+					<div class="container-sm">
+						<ul class="list-reset mb-0">
+							<li>
+								<span class="screen-reader-text">NodeJs</span>
+								<svg t="1571213024092" class="icon" viewBox="0 0 1280 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5867" width="132" height="40"><path d="M632.6 904c-4.2 0-8.4-1.2-12.2-3.2L582 878c-5.8-3.2-3-4.4-1-5 7.6-2.6 9.2-3.2 17.4-8 0.8-0.4 2-0.2 2.8 0.2l29.6 17.6c1 0.6 2.6 0.6 3.6 0L750 816c1-0.6 1.8-1.8 1.8-3.2v-133.4c0-1.4-0.6-2.6-1.8-3.2l-115.6-66.6c-1-0.6-2.4-0.6-3.6 0l-115.6 66.6c-1.2 0.6-1.8 2-1.8 3.2v133.4c0 1.2 0.8 2.4 1.8 3l31.6 18.2c17.2 8.6 27.8-1.6 27.8-11.6v-131.8c0-1.8 1.4-3.4 3.4-3.4h14.6c1.8 0 3.4 1.4 3.4 3.4v131.8c0 23-12.4 36-34.2 36-6.6 0-12 0-26.6-7.2l-30.4-17.4c-7.4-4.4-12.2-12.4-12.2-21v-133.4c0-8.6 4.6-16.8 12.2-21l115.6-66.8c7.4-4.2 17-4.2 24.2 0l115.6 66.8c7.4 4.4 12.2 12.4 12.2 21v133.4c0 8.6-4.6 16.8-12.2 21l-115.6 66.8c-3.4 2.2-7.6 3.4-12 3.4z m93.4-131.6c0-25-16.8-31.6-52.4-36.4-36-4.8-39.6-7.2-39.6-15.6 0-7 3-16.2 29.6-16.2 23.8 0 32.6 5.2 36.2 21.2 0.4 1.6 1.6 2.6 3.2 2.6h15c1 0 1.8-0.4 2.4-1 0.6-0.8 1-1.6 0.8-2.6-2.4-27.6-20.6-40.4-57.6-40.4-33 0-52.6 14-52.6 37.2 0 25.4 19.6 32.2 51.2 35.4 37.8 3.8 40.8 9.2 40.8 16.6 0 13-10.4 18.4-34.8 18.4-30.6 0-37.4-7.6-39.6-22.8-0.2-1.6-1.6-2.8-3.4-2.8h-15c-1.8 0-3.4 1.4-3.4 3.4 0 19.4 10.6 42.6 61.2 42.6 37 0 58-14.4 58-39.6z m109-100.2c0 12.2-10 22.2-22.2 22.2s-22.2-10-22.2-22.2c0-12.6 10.4-22.2 22.2-22.2 12-0.2 22.2 9.6 22.2 22.2z m-3.6 0c0-10.4-8.4-18.6-18.8-18.6-10.2 0-18.6 8.2-18.6 18.6 0 10.4 8.4 18.8 18.6 18.8 10.4-0.2 18.8-8.6 18.8-18.8z m-9 12.4h-5.2c-0.2-1.2-1-7.6-1-7.8-0.4-1.4-0.8-2.2-2.6-2.2h-4.4v10h-4.8v-25h8.6c3 0 8.8 0 8.8 6.6 0 4.6-3 5.6-4.8 6.2 3.4 0.2 3.6 2.4 4.2 5.6 0.2 2 0.6 5.4 1.2 6.6z m-5.6-17.6c0-3.4-2.4-3.4-3.6-3.4h-4v7h3.8c3.2 0 3.8-2.2 3.8-3.6zM274.6 382c0-5.4-2.8-10.2-7.4-12.8l-122.6-70.6c-2-1.2-4.4-1.8-6.8-2h-1.2c-2.4 0-4.6 0.8-6.8 2L7.4 369.2C2.8 371.8 0 376.8 0 382l0.2 190c0 2.6 1.4 5 3.6 6.4 2.2 1.4 5 1.4 7.4 0L84 536.6c4.6-2.8 7.4-7.6 7.4-12.8v-88.8c0-5.2 2.8-10.2 7.4-12.8l31-17.8c2.4-1.4 4.8-2 7.4-2 2.6 0 5.2 0.6 7.4 2l31 17.8c4.6 2.6 7.4 7.6 7.4 12.8v88.8c0 5.2 2.8 10.2 7.4 12.8l72.8 41.8c2.2 1.4 5.2 1.4 7.4 0 2.2-1.2 3.6-3.8 3.6-6.4l0.4-190zM945 174.6v352.8c0 5.2-2.8 10.2-7.4 12.8l-122.6 70.8c-4.6 2.6-10.2 2.6-14.8 0l-122.6-70.8c-4.6-2.6-7.4-7.6-7.4-12.8v-141.6c0-5.2 2.8-10.2 7.4-12.8l122.6-70.8c4.6-2.6 10.2-2.6 14.8 0l30.6 17.6c3.4 2 7.8-0.6 7.8-4.4v-188c0-5.6 6-9.2 11-6.4l73 40.8c4.6 2.4 7.6 7.4 7.6 12.8z m-92 257.8c0-1.4-0.8-2.6-1.8-3.2l-42-24.4c-1.2-0.6-2.6-0.6-3.8 0l-42 24.4c-1.2 0.6-1.8 1.8-1.8 3.2v48.6c0 1.4 0.8 2.6 1.8 3.2l42 24.2c1.2 0.6 2.6 0.6 3.6 0l42-24.2c1.2-0.6 1.8-1.8 1.8-3.2v-48.6z m419.6-1.4c4.6-2.6 7.4-7.6 7.4-12.8V384c0-5.2-2.8-10.2-7.4-12.8l-121.8-70.8c-4.6-2.6-10.2-2.6-14.8 0l-122.6 70.8c-4.6 2.6-7.4 7.6-7.4 12.8v141.6c0 5.4 2.8 10.2 7.4 12.8l121.8 69.4c4.4 2.6 10 2.6 14.6 0l73.6-41c5-2.8 5-10 0-12.8L1100 483.2c-2.4-1.4-3.8-3.8-3.8-6.4v-44.4c0-2.6 1.4-5 3.8-6.4l38.4-22.2c2.2-1.4 5.2-1.4 7.4 0l38.4 22.2c2.2 1.4 3.8 3.8 3.8 6.4v34.8c0 5.6 6.2 9.2 11.2 6.4l73.4-42.6zM1118 438c-0.8 0.6-1.4 1.4-1.4 2.4v27.2c0 1 0.6 2 1.4 2.4l23.6 13.6c0.8 0.6 2 0.6 2.8 0L1168 470c0.8-0.6 1.4-1.4 1.4-2.4v-27.2c0-1-0.6-2-1.4-2.4l-23.6-13.6c-0.8-0.6-2-0.6-2.8 0L1118 438z m-508.4 87v-140.8c0-5.2-3.2-10.2-7.8-12.8l-122.2-70.4c-4.2-2.4-10-2.8-14.8 0l-122.2 70.4c-4.6 2.6-7.8 7.4-7.8 12.8v140.8c0 5.6 3.8 10.4 8 12.8l122.4 70.4c4.8 2.8 10.4 2.6 14.8 0l122-70.4c3.6-2 6.2-5.4 7.2-9.4 0.2-1 0.4-2.2 0.4-3.4z m-148.6-249.8l-1.6 1h2.2l-0.6-1z m152.4 260.4l-0.8-1.4v1.8l0.8-0.4z" p-id="5868" fill="#8a8a8a"></path></svg>
+							</li>
+							<li>
+								<span class="screen-reader-text">FMSLogo</span>
+								<img src="banner.png" height="40" />
+							</li>
+							
+							<li>
+								<span class="screen-reader-text">Logo Interpreter</span>
+								<img src="logo3.png" height="40" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="features section text-center">
+			<div class="container">
+				<div class="features-inner section-inner has-top-divider">
+					<h2 class="section-title mt-0">Features</h2>
+					<div class="features-wrap">
+						<div class="feature is-revealing">
+							<div class="feature-inner">
+								<div class="feature-icon">
+									<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+										<g fill="none" fill-rule="evenodd">
+											<path fill="#84E482" d="M48 16v32H16z"/>
+											<path fill="#0EB3CE" d="M0 0h32v32H0z"/>
+										</g>
+									</svg>
+								</div>
+								<h4 class="feature-title h3-mobile">Support OOP</h4>
+								<p class="text-sm">You can write less code and do more things.</p>
+							</div>
+						</div>
+						<div class="feature is-revealing">
+							<div class="feature-inner">
+								<div class="feature-icon">
+									<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+										<g fill="none" fill-rule="evenodd">
+											<path fill="#84E482" d="M48 16v32H16z"/>
+											<path fill="#0EB3CE" d="M0 0v32h32z"/>
+											<circle fill="#02C6A4" cx="29" cy="9" r="4"/>
+										</g>
+									</svg>
+								</div>
+								<h4 class="feature-title h3-mobile">Logo GUI</h4>
+								<p class="text-sm">Original black&white style button/input/tag are on their way.</p>
+							</div>
+						</div>
+						<div class="feature is-revealing">
+							<div class="feature-inner">
+								<div class="feature-icon">
+									<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+										<g fill="none" fill-rule="evenodd">
+											<path fill="#0EB3CE" d="M0 0h32v32H0z"/>
+											<path fill="#84E482" d="M16 16h32L16 48z"/>
+										</g>
+									</svg>
+								</div>
+								<h4 class="feature-title h3-mobile">Useful Utitlies</h4>
+								<p class="text-sm">There are many useful method like 'copyfile' aleady in hair_base class.</p>
+							</div>
+						</div>
+						<div class="feature is-revealing">
+							<div class="feature-inner">
+								<div class="feature-icon">
+									<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+										<g fill="none" fill-rule="evenodd">
+											<path d="M32 40H0c0-8.837 7.163-16 16-16s16 7.163 16 16z" fill="#84E482" style="mix-blend-mode:multiply"/>
+											<path fill="#03C5A4" d="M12 8h8v8h-8z"/>
+											<path fill="#0EB3CE" d="M32 0h16v48H32z"/>
+										</g>
+									</svg>
+								</div>
+								<h4 class="feature-title h3-mobile">More possibilities</h4>
+								<p class="text-sm">Anyone who knows nodejs grammar can easily expend hair's abilities.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="features-extended section">
+			<div class="container">
+				<div class="features-extended-inner section-inner has-top-divider">
+					<div class="features-extended-header text-center">
+						<div class="container-sm">
+							<h2 class="section-title mt-0">Meet Hair</h2>
+							<p class="section-paragraph">There are lots of things you can do by old logo language with hair, &nbsp;the things you dreamed of in young time.</p>
+						</div>
+					</div>
+					<div class="feature-extended">
+						<div class="feature-extended-image is-revealing">
+							<svg width="480" height="360" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="dropshadow-1">
+										<feOffset dy="16" in="SourceAlpha" result="shadowOffsetOuter"/>
+										<feGaussianBlur stdDeviation="24" in="shadowOffsetOuter" result="shadowBlurOuter"/>
+										<feColorMatrix values="0 0 0 0 0.12 0 0 0 0 0.17 0 0 0 0 0.21 0 0 0 0.2 0" in="shadowBlurOuter"/>
+									</filter>
+								</defs>
+								<path fill="#F6F8FA" d="M0 220V0h200zM480 140v220H280z"/>
+								<path fill="#FFF" d="M40 50h400v260H40z" style="mix-blend-mode:multiply;filter:url(#dropshadow-1)"/>
+								<path fill="#FFF" d="M40 50h400v260H40z"/>
+								<path fill="#FFF" d="M103 176h80v160h-80zM320 24h88v88h-88z" style="mix-blend-mode:multiply;filter:url(#dropshadow-1)"/>
+								<path fill="#FFF" d="M103 176h80v160h-80zM320 24h88v88h-88z"/>
+								<path fill="#FFF" d="M230.97 198l16.971 16.971-16.97 16.97L214 214.972z" style="mix-blend-mode:multiply;filter:url(#dropshadow-1)"/>
+								<path fill="#02C6A4" d="M230.97 198l16.971 16.971-16.97 16.97L214 214.972z"/>
+								<path fill="#FFF" d="M203 121H103v100z" style="mix-blend-mode:multiply;filter:url(#dropshadow-1)"/>
+								<path fill="#84E482" d="M203 121H103v100z"/>
+								<circle fill="#FFF" cx="288" cy="166" r="32" style="mix-blend-mode:multiply;filter:url(#dropshadow-1)"/>
+								<circle fill="#0EB3CE" cx="288" cy="166" r="32" style="mix-blend-mode:multiply"/>
+							</svg>
+						</div>
+						<div class="feature-extended-body">
+							<h3 class="mt-0">Build Software</h3>
+							<p>With wrapper tool like XpackerX, you can pack logo script and interpreter together as a normal .exe program. Hair helps you build user interface fastly and easily.</p>
+						</div>
+					</div>
+					<div class="feature-extended">
+						<div class="feature-extended-image is-revealing">
+							<svg width="480" height="360" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="dropshadow-2">
+										<feOffset dy="16" in="SourceAlpha" result="shadowOffsetOuter"/>
+										<feGaussianBlur stdDeviation="24" in="shadowOffsetOuter" result="shadowBlurOuter"/>
+										<feColorMatrix values="0 0 0 0 0.12 0 0 0 0 0.17 0 0 0 0 0.21 0 0 0 0.2 0" in="shadowBlurOuter"/>
+									</filter>
+								</defs>
+								<path fill="#F6F8FA" d="M480 140v220H280zM0 220V0h200z"/>
+								<path fill="#FFF" d="M40 50h400v260H40z" style="mix-blend-mode:multiply;filter:url(#dropshadow-2)"/>
+								<path fill="#FFF" d="M40 50h400v260H40z"/>
+								<path fill="#FFF" d="M86.225 161l62.226 62.225-62.226 62.225L24 223.225zM296 176h80v160h-80z" style="mix-blend-mode:multiply;filter:url(#dropshadow-2)"/>
+								<path fill="#FFF" d="M86.225 161l62.226 62.225-62.226 62.225L24 223.225zM296 176h80v160h-80z"/>
+								<path fill="#FFF" d="M245.092 218l9.378 22.092-22.093 9.378L223 227.378z" style="mix-blend-mode:multiply;filter:url(#dropshadow-2)"/>
+								<path fill="#02C6A4" d="M245.092 218l9.378 22.092-22.093 9.378L223 227.378z"/>
+								<path fill="#FFF" d="M270 96H170v100z" style="mix-blend-mode:multiply;filter:url(#dropshadow-2)"/>
+								<path fill="#84E482" d="M270 96H170v100z"/>
+								<circle fill="#FFF" cx="296" cy="177" r="32" style="mix-blend-mode:multiply;filter:url(#dropshadow-2)"/>
+								<circle fill="#0EB3CE" cx="296" cy="177" r="32" style="mix-blend-mode:multiply"/>
+							</svg>
+						</div>
+						<div class="feature-extended-body">
+							<h3 class="mt-0">Website Host</h3>
+							<p>Hair and Express on NodeJs helps you to host a tiny web server and compile logo commands in html files. </p>
+						</div>
+					</div>
+					<div class="feature-extended" style="display:none">
+						<div class="feature-extended-image is-revealing">
+							<svg width="480" height="360" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="dropshadow-3">
+										<feOffset dy="16" in="SourceAlpha" result="shadowOffsetOuter"/>
+										<feGaussianBlur stdDeviation="24" in="shadowOffsetOuter" result="shadowBlurOuter"/>
+										<feColorMatrix values="0 0 0 0 0.12 0 0 0 0 0.17 0 0 0 0 0.21 0 0 0 0.2 0" in="shadowBlurOuter"/>
+									</filter>
+								</defs>
+								<path fill="#F6F8FA" d="M480 140v220H280zM0 220V0h200z"/>
+								<path fill="#FFF" d="M40 50h400v260H40z" style="mix-blend-mode:multiply;filter:url(#dropshadow-3)"/>
+								<path fill="#FFF" d="M40 50h400v260H40z"/>
+								<path fill="#FFF" d="M72 248h88v88H72zM180 24h80v160h-80z" style="mix-blend-mode:multiply;filter:url(#dropshadow-3)"/>
+								<path fill="#FFF" d="M72 248h88v88H72zM180 24h80v160h-80z"/>
+								<path fill="#FFF" d="M277.664 261.919l-18.113 15.745-15.746-18.113 18.113-15.745z" style="mix-blend-mode:multiply;filter:url(#dropshadow-3)"/>
+								<path fill="#02C6A4" d="M277.664 261.919l-18.113 15.745-15.746-18.113 18.113-15.745z"/>
+								<path fill="#FFF" d="M315 129H215v100z" style="mix-blend-mode:multiply;filter:url(#dropshadow-3)"/>
+								<path fill="#84E482" d="M315 129H215v100z"/>
+								<circle fill="#FFF" cx="318" cy="219" r="32" style="mix-blend-mode:multiply;filter:url(#dropshadow-3)"/>
+								<circle fill="#0EB3CE" cx="318" cy="219" r="32" style="mix-blend-mode:multiply"/>
+							</svg>
+						</div>
+						<div class="feature-extended-body">
+							<h3 class="mt-0">Discover</h3>
+							<p>Where text is visible, people tend to focus on the textual content rather than upon overall presentation</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pricing section">
+			<div class="container">
+				<div class="pricing-inner section-inner has-top-divider">
+					<h2 class="section-title mt-0 text-center">Other Download</h2>
+					<div class="pricing-tables-wrap">
+						<div class="pricing-table is-revealing">
+							<div class="pricing-table-inner">
+								<div class="pricing-table-main">
+									<div class="pricing-table-header">
+										<div class="pricing-table-title mt-12 mb-16 text-secondary">Hair V1.1.1</div>
+										<div class="pricing-table-price mb-24 pb-32"><span class="pricing-table-price-currency h3">Open Source</span></div>
+									</div>
+									<ul class="pricing-table-features list-reset text-xs mb-56">
+										<li>
+											<span class="list-icon">
+												<svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+													<path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00C6A7" fill-rule="nonzero"/>
+												</svg>
+											</span>
+											<span>Depend on PCLogo.</span>
+										</li>
+										<li>
+											<span class="list-icon">
+												<svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+													<path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00C6A7" fill-rule="nonzero"/>
+												</svg>
+											</span>
+											<span>Simple GUI Supported with mouse control.</span>
+										</li>
+										
+									</ul>
+								</div>
+								<div class="pricing-table-cta">
+									<a class="button button-secondary button-block" href="1.1.1/hair.7z">Get now</a>
+								</div>
+							</div>
+						</div>
+						<div class="pricing-table is-revealing">
+							<div class="pricing-table-inner">
+								<div class="pricing-table-main">
+									<div class="pricing-table-header">
+										<div class="pricing-table-title mt-12 mb-16 text-primary">Hair V1.4</div>
+										<div class="pricing-table-price mb-24 pb-32"><span class="pricing-table-price-currency h3">Open Source</span></div>
+									</div>
+									<ul class="pricing-table-features list-reset text-xs mb-56">
+										<li>
+											<span class="list-icon">
+												<svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+													<path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+												</svg>
+											</span>
+											<span>Final version of 1.0 branch.</span>
+										</li>
+										<li>
+											<span class="list-icon">
+												<svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+													<path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+												</svg>
+											</span>
+											<span>Advanced OOP supported.</span>
+										</li>
+										<li>
+											<span class="list-icon">
+												<svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+													<path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+												</svg>
+											</span>
+											<span>Enhanced by tiny executable file.</span>
+										</li>
+										<li>
+											<span class="list-icon">
+												<svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+													<path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+												</svg>
+											</span>
+											<span>Depend on FMSLogo7.2+.</span>
+										</li>
+									</ul>
+								</div>
+								<div class="pricing-table-cta">
+									<a class="button button-primary button-block" href="1.4/hair.zip">Get now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<div class="site-footer-inner">
+				<div class="brand footer-brand">
+					<a href="#">
+						<svg width="26" height="28" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M11.736 11.988C14.28 11.988 16.632 12.012 18.792 12.06C19.92 7.5 21.024 4.332 22.104 2.556C22.824 1.524 23.544 0.779998 24.264 0.323998C24.552 0.131999 24.84 0.0359995 25.128 0.0359995C25.44 0.0359995 25.596 0.503999 25.596 1.44C25.596 2.376 25.512 3.36 25.344 4.392C25.2 5.424 25.008 6.612 24.768 7.956C23.976 12.372 23.376 15.9 22.968 18.54C22.584 21.18 22.392 23.724 22.392 26.172C22.392 26.844 21.912 27.18 20.952 27.18C19.44 27.18 18.408 26.892 17.856 26.316C17.304 25.716 17.028 24.648 17.028 23.112C17.028 21.552 17.34 19.104 17.964 15.768C15.324 15.648 13.656 15.588 12.96 15.588H11.484C11.22 15.588 10.956 15.6 10.692 15.624C9.612 19.752 9.072 23.016 9.072 25.416C9.072 26.832 7.692 27.54 4.932 27.54C4.332 27.54 3.972 27.24 3.852 26.64C3.756 26.016 3.708 25.02 3.708 23.652C3.708 22.26 4.14 19.776 5.004 16.2C3.54 16.416 2.472 16.524 1.8 16.524C1.488 16.524 1.332 16.404 1.332 16.164C1.332 15.636 1.716 15.036 2.484 14.364C3.276 13.692 4.428 13.152 5.94 12.744C6.828 9.672 7.716 7.152 8.604 5.184C6.012 5.232 4.104 5.736 2.88 6.696C2.496 6.984 2.184 7.248 1.944 7.488C1.704 7.704 1.488 7.812 1.296 7.812C1.128 7.812 0.96 7.668 0.792 7.38C0.624 7.092 0.54 6.708 0.54 6.228C0.54 4.476 2.016 3.144 4.968 2.232C7.32 1.512 10.056 1.14 13.176 1.116H13.248C13.416 1.116 13.644 1.212 13.932 1.404C14.244 1.596 14.4 1.908 14.4 2.34C14.4 2.772 14.316 3.264 14.148 3.816C14.004 4.344 13.8 4.74 13.536 5.004C13.392 6.132 12.792 8.46 11.736 11.988Z" fill="url(#paint0_radial)"/>
+						<defs>
+						<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(13 14) rotate(90) scale(24 13)">
+						<stop stop-color="#12AD9E"/>
+						<stop offset="1" stop-color="white"/>
+						</radialGradient>
+						</defs>
+						</svg>
+					</a>
+				</div>
+				<ul class="footer-links list-reset">
+					<li>
+						<a href="#">Contact Me: jjy#wiwy.us (@replace#)</a>
+					</li>
+				</ul>
+				<ul class="footer-social-links list-reset" style="visibility:hidden">
+					<li>
+						<a href="#">
+							<span class="screen-reader-text">Facebook</span>
+							<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#0EB3CE"/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="screen-reader-text">Twitter</span>
+							<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#0EB3CE"/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="screen-reader-text">Google</span>
+							<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#0EB3CE"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<div class="footer-copyright">Copyright &copy; 2019.StephenKing All rights reserved.</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="dist/js/main.min.js"></script>
+
+</body>
+</html>

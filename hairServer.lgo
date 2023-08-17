@@ -1,0 +1,13 @@
+to a :l
+op a1 :l a2 30
+end
+
+to a1 :l :w
+if empty? :l [op :w]
+make "w remove first :l :w
+op a1 bf :l :w
+end
+to a2 :n
+if :n=1 [op 1]
+op se a2 :n-1 :n
+end
